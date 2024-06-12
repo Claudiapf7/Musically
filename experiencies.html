@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estils/estil.css">
+	<title>Experiències</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/articulate.js"></script>
+</head>
+<body>
+	<!-- Inici Capçalera -->
+	<header>
+		<div class="contenidor">
+			<div class="col1">
+				<div id="logo">
+					<img src="images/logo.png" alt="logo Musicality" width="100" height="100">
+					<span class="tooltip">Utilitzant el mètode animate() animem el logo.</span>
+				</div>	
+			</div>
+			<div class="col2">
+				<div id="titolpagina">
+					<h1>Musicality</h1>
+				</div>	
+				<div id="dropdown">
+					<img class="botomenu" id="botomenu" src="images/menu.png" alt="botomenu">
+					<span class="tooltip">Cliquem per obrir el menú amb Toggle().</span>
+				</div>
+			</div>
+			<div class="col3">
+				<div id="navegacio">
+					<nav>
+						<ul>
+							<li><a href="#mainContent">Principal</a></li>
+							<li><a href="index.html">Inici</a></li>
+							<li><a class="seleccionat"	href="experiencies.html">Experiències</a></li>
+							<li><a href="contacte.html">Contacte</a></li>
+							<li><a href="ofertes.html">Ofertes</a></li>
+							<li><a href="extra.html">Qui som</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Menú per dispositius petits-->
+	<div class="menuFull">
+		<ul>
+			<li><a href="index.html">Inici</a></li>
+			<li><a class="seleccionat" href="experiencies.html">Experiències</a></li>
+			<li><a href="contacte.html">Contacte</a></li>
+			<li><a href="ofertes.html">Ofertes</a></li>
+			<li><a href="extra.html">Qui som</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div class="separador">
+			<h2>Descobreix les millors experiències</h2>
+		</div>
+			<!-- Contingut -->
+				<div class="experiencies" id="mainContent">
+					<article class="experienciamusical">
+						<div class="imatge">
+							<figure>
+								<img src="images/guitarrista.avif" alt="Noi tocant la guitarra">
+							</figure>
+						</div>
+						<div class="text">
+							<h3>Tant per principiants com per músics professionals</h3>
+							<div>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt voluptas sapiente, laudantium tempore repudiandae quam eum alias aut beatae dolorum inventore velit autem laborum perferendis, dolorem incidunt distinctio illo?</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magni aperiam fuga dicta dignissimos, quae facere quas quia corrupti aliquam repellat temporibus vero, voluptates sit nulla, nobis expedita nemo quod!</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptas exercitationem inventore neque nisi illo sint ad nobis accusamus non illum, impedit similique rem expedita eaque quod, dolores pariatur. Cumque?</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt voluptas sapiente, laudantium tempore repudiandae quam eum alias aut beatae dolorum inventore velit autem laborum perferendis, dolorem incidunt distinctio illo?</p>
+						</div>
+						<!-- Video de Youtube -->
+						<iframe title="tutorial sobre edició musical" src="https://www.youtube.com/embed/p4Yc8TSnj7k?si=WttscvnAFVnFWNU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</article>
+				</div>
+	</div>
+	<footer>
+		<small>© Musicality. Drets reservats</small>
+		<p>musicality@mailexemple.com</p>
+	</footer>
+	<!--Botó per tornar a l'inici-->
+	<a id="toTop">
+		<span class="tooltip">Fent click tornem a la part superior de la pàgina.</span>
+		<img src="images/arrow-up.png" alt="Inici" height="50px"></a>
+</body>
+</html>

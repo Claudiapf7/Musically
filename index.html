@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estils/estil.css">
+	<title>Musicality</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<!-- Inici Capçalera -->
+	<header>
+		<div class="contenidor">
+			<div class="col1">
+				<div id="logo">
+					<img src="images/logo.png" alt="logo Musicality" width="100" height="100">
+					<span class="tooltip">Utilitzant el mètode animate() animem el logo.</span>
+				</div>	
+			</div>
+			<div class="col2">
+				<div id="titolpagina">
+					<h1>Musicality</h1>
+				</div>	
+			</div>
+			<div class="col3">
+				<div id="dropdown">
+					<img class="botomenu" id="botomenu" src="images/menu.png" alt="botomenu">
+					<span class="tooltip">Cliquem per obrir el menú amb Toggle().</span>
+				</div>
+				<div id="navegacio">
+					<nav>
+						<ul>
+							<li><a href="#mainContent">Principal</a></li>
+							<li><a class="seleccionat"	href="index.html">Inici</a></li>
+							<li><a href="experiencies.html">Experiències</a></li>
+							<li><a href="contacte.html">Contacte</a></li>
+							<li><a href="ofertes.html">Ofertes</a></li>
+							<li><a href="extra.html">Qui som</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Final capçalera-->
+	<!-- Menú per dispositius petits-->
+	<div class="menuFull">
+		<ul>
+			<li><a class="seleccionat" href="index.html">Inici</a></li>
+			<li><a href="experiencies.html">Experiències</a></li>
+			<li><a href="contacte.html">Contacte</a></li>
+			<li><a href="ofertes.html">Ofertes</a></li>
+			<li><a href="extra.html">Qui som</a></li>
+		</ul>
+	</div>
+	<!--Final menú -->
+	<div id="main">
+		<!--  Imatge principal -->
+	<section>
+		<div id="imgprincipal">
+		<figure>
+			<img src="images/musicalityordinador.webp" alt="Noi amb programa d'edició musical.">
+		</figure>
+		</div>
+	</section>
+	
+	<div class="separador" id="mainContent">
+			<h2>Descobreix Musicality</h2>
+	</div>
+	<!--  Contingut -->
+	<div class="contingut" >
+		<section>
+		<h2>Productes</h2>
+		<div class="caracteristiques">
+			<article>
+			<h3>Editor</h3>
+			<figure>
+				<img src="images/programa.webp" alt="Imatge d'ordinador amb programa d'audio.">
+				<figcaption>Editor d'audio.</figcaption>
+			</figure>
+			</article>
+			<article>
+			<h3>Equipament musical</h3>
+			<figure>
+				<img src="images/amplificador.webp" alt="Imatge de diversos amplificadors.">
+				<figcaption>Amplificadors musicals.</figcaption>
+			</figure>
+			</article>
+			<article>
+				<h3>Intel·ligència artifical</h3>
+				<figure>
+					<img src="images/iamusica.webp" alt="Imatge de ma robòtica tocant un aparell musical.">
+					<figcaption>Ajuda d'intel·ligència artifical</figcaption>
+				</figure>
+				</article>
+			</div>
+		</section>
+		</div>
+	<div class="separador2">
+		<h2>Descobreix les nostres ofertes</h2><a href="ofertes.html"><button type="button">Veure les ofertes</button></a> 
+		</div>
+	</div>
+	<footer>
+		<small>© Musicality. Drets reservats</small>
+		<p>musicality@mailexemple.com</p>
+	</footer>
+	       <!--Botó per tornar a l'inici-->
+		   <a id="toTop">
+			<span class="tooltip">Fent click tornem a la part superior de la pàgina.</span>
+			<img src="images/arrow-up.png" alt="Tornar a l'Inici" height="50px"></a>
+</body>
+</html>

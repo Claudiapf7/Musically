@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*----------------------------------------estils de body, header, footer i nav per totes les pàgines------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#dropdown{
+    display: none;
+}
+
+
+header .contenidor{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+}
+
+nav {
+        margin: auto;
+        padding: 5px;
+        border-radius: 2pt;
+        -webkit-flex: 1 6 20%;
+        flex: 1 6 20%;
+        -webkit-order: 1;
+        order: 2;
+        display: inline-block;
+        height: inherit;
+        }
+body{
+    background-color:rgb(78, 111, 111);
+    font-family: "Poppins", sans-serif;
+}
+
+.menuFull{
+    display: none;
+}
+.titolpagina{
+    margin-right: auto;
+}
+header{
+    z-index: 10;
+    height: 15%;
+    background-color: rgb(78, 111, 111);
+    width: 100%;
+    position: -webkit-sticky;
+    /*Safari i Chrome*/
+    position: -moz-sticky;
+    /*Firefox*/
+    position: -ms-sticky;
+    /*Edge*/
+    position: -o-sticky;
+    /*Opera*/
+    position:sticky;
+    top: 0;
+    box-shadow: 2px 0px 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navegacio nav ul li a{
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 20px;
+    width: auto;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+#navegacio nav ul li a:hover{
+   font-weight: bold;
+   border: white 1px solid;
+}
+ 
+#navegacio nav ul{
+    list-style: none;
+    display: inline-flex;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header h1{
+    position: relative;
+    text-transform:uppercase;
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 2px;
+    width: auto;
+    
+}
+h2{
+    color: black;
+    font-size: 16px;
+}
+
+
+.contingut h2{
+    text-transform:uppercase;
+    color: whitesmoke;
+    padding-bottom: 20px;
+    padding-top: 10px; 
+}
+article h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.col1{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#logo img{
+    width: 100%;
+    height: 130%;
+    max-height: 80px;
+    filter: invert();
+}
+a img{
+    width: 100%;
+    height: auto;
+    filter: invert(50%);
+    margin-right: 10px;
+}
+a img:hover{
+    filter:contrast(50%);
+}
+/** botó per tornar adalt */
+
+#toTop{
+    max-width: 70px;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    filter: invert(100%) sepia(7%) saturate(175%) hue-rotate(261deg) brightness(114%) contrast(87%);
+    display: none;
+    cursor: pointer;
+}
+
+/** comentaris */ 
+
+.tooltip {
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 101;
+    transition: opacity 0.3s;
+    
+}
+
+#logo:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: 100px;
+    left: 250px;
+}
+a#toTop:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    right: -100px;
+}
+
+#dropdown:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    right: -100px;
+}
+
+/*FOOTER*/
+
+footer{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(20, 26, 46, 0.5);
+    color:#ccc;
+    padding: 10px;
+    font-size: 14px;
+    max-height: 70px;
+}
+footer p, footer small{
+    font-size: 16px;
+}
+
+footer a{
+    color: white;
+}
+
+
+.seleccionat{
+    border:none;
+    border-bottom: white 1px solid;
+}
+
+#imgprincipal figure img{
+    margin-top: -10px;
+    width: 100%;
+    height: auto;
+}
+.separador2{
+    margin-top: -10px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.separador{
+    margin-top: -10px;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(20, 26, 46, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.separador h2{
+    text-transform:uppercase;
+    color: whitesmoke;
+    padding-bottom: 20px;
+    padding-top: 20px; 
+    font-size:24px;
+}
+.separador2 h2{
+    text-transform:uppercase;
+    color: #4e6f6f;
+    padding-bottom: 20px;
+    padding-top: 20px; 
+    font-size: 24px;
+}
+
+/*--------------------------------inici, experiencies i extra---------------------------------------------------*/
+.contingut{
+    text-align: center;
+    margin: 20px;
+}
+
+
+.caracteristiques, .quisom, .experiencies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contingut img{
+    max-height: 200px;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 5%;
+}
+
+
+.contingut img:hover{
+    opacity: 0.5;
+}
+.contingut article{
+    width: 60%;
+    margin: 0 0 25px 0;
+    padding: 15px;
+    color: whitesmoke;
+}
+.contingut p{
+    margin-top: 15px;
+    border: 1px solid white 0.5;
+    background-color: rgb(44, 63, 63,0.1);
+}
+figcaption{
+    font-size: 14px;
+}
+p::first-letter{
+    font-size: 1.2em;
+}
+
+
+
+/*------------------------------------------------estil per experiencies----------------------------------------------------------*/
+
+
+.imatge img{
+    float: left;
+    max-width: none;
+    max-height: 100%;
+    height: auto;
+    width: 60%;
+    margin-right: 15px;
+}
+
+.text{
+    max-height: 100%;
+}
+.text p{
+    margin-top: 15px;
+    background-color: rgb(44, 63, 63,0.1);
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.text h3{
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+.experienciamusical{
+    text-align: center;
+}
+article iframe{
+    border: #ddd solid 2px;
+    margin: 30px 0;
+    width: 75%;
+    min-height: 480px;
+    height: auto;
+}
+/*------------------------------------------------estil del formulari----------------------------------------------------------*/
+
+.contenidor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contenidor form{
+    width: 30%;
+    height: 100%;
+}
+
+.contenidor .columna {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+.contenidor form, .contacte{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px black;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+}
+.contacte{
+    width: 70%;
+    flex-wrap: wrap;
+}
+label{
+    width: 100%;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit], button{
+    background-color: darkslategray;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+
+
+input[type=submit]:hover, button:hover{
+    background-color:rgb(151, 177, 177);
+}
+input[type=submit]:active{
+    background-color:whitesmoke;
+    color: black;
+}
+label{
+    padding: 10px 10px 10px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+input:focus{
+    border: 3px solid #555;
+}
+
+.icona{
+    margin: 10px;
+}
+
+#ubicaciolocal{
+    width: 75%;
+    min-height: 260px;
+    height: auto;
+    margin: 15px;
+}
+
+.contacte ul li{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+.contacte ul{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    border:#bcc3cc solid 1px;
+    align-items: center;
+    justify-content: center; 
+}
+/*-------------------------------------------------- estil per ofertes--------------------------------------------------------- */
+
+.taulapreus{
+    width: 100%;
+    float: right;
+    margin: 20px;
+    overflow: auto;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 4px;
+    padding: 20px;
+    border-collapse: collapse;
+
+}
+.taulapreus table{
+    width: 100%;
+    height: inherit;
+    border: 1px solid #bcc3cc;
+    table-layout:fixed;
+}
+
+.taulapreus th:not(:first-child){
+    white-space: nowrap;
+    width: 100%; 
+}
+
+.taulapreus img{
+    width: 300px;
+    height: auto;
+}
+.taulapreus th, .taulapreus td{
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color:#bcc3cc;
+}
+
+th{
+    background-color: #bcc3cc;
+}
+
+/* elements que originalment estan amagats */
+
+.off{
+    display: none;
+}
+
+
+/*------------------------------------------------------estil per dispositius petits---------------------------------------------------------- */
+@media all and (max-width: 780px) {
+
+    /*navbar i footer*/
+    #navegacio{
+        display: none;
+    }
+    main, #page {
+     -webkit-flex-flow: column;
+     flex-flow: column;
+    }
+    article, nav {
+     -webkit-order: 0;
+     order: 0;
+    }
+    footer {
+        height: 8%;
+        width: auto;
+    }
+    header{
+        width: 100%;
+        height: 80px;
+    }
+
+    nav{
+        height: inherit;
+    }    
+    h2{
+        font-size: 20px;
+    }
+    #logo img{
+        width: auto;
+        min-height: 50px;
+    }
+    footer p, footer small{
+        font-size: 14px;
+    }
+
+    header > .contenidor{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    /*----inici------*/
+    .caracteristiques img, .quisom img{
+    height: auto;
+    width: 75%;
+    }
+    
+    div.separador, div.separador2{
+        height: 100px;
+        width: 100%;
+    }
+
+    .contingut article{
+        width: 100%;
+    }
+    
+    /*-------experiencies-----*/
+    .experiencies{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    
+    
+    .contingut .experiencies img{
+        max-width: 320px;
+        width: auto;
+        height: auto;
+    }
+
+
+    /*----------taula preus---------------*/
+    .contenidor{
+        width: 90%;
+    }
+    .taulapreus{
+        width: 100%;
+        margin: 15px;
+        
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        text-align: left;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 50%;
+        text-align: left;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    img {
+        width: 50%;
+        margin: 0;
+    }
+
+
+    .imatge img{
+        width: 100%;
+        display: block;
+    }
+
+    /*form*/
+    .contenidor, .contacte{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenidor form{
+
+        width: 100%;
+
+    }
+
+    .contenidor form, .contacte{
+        align-items: center;
+    }
+    .contenidor form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*nav*/
+    #navegacio{
+        display: none;
+    }
+    #dropdown{
+        display:block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 10px;
+
+    }
+    #dropdown img.botomenu{
+        display: inline-block;
+        width: 50px;
+        height: 70%;
+        filter: invert(1);
+    }
+
+    .menuFull{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(78, 111, 111);
+        color: white;
+        overflow-x: hidden;
+
+    }
+
+    .menuFull ul{
+        height: 100%;
+        display: flex;
+        list-style: none;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .menuFull ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: whitesmoke;
+        font-size: 36px;
+        display: block;
+    }
+
+    article iframe{
+        width: 90%;
+        height: auto;
+    }
+
+    #ubicaciolocal{
+        max-width: 400px;
+    }
+    }
+

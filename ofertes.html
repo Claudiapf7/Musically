@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estils/estil.css">
+	<title>Ofertes</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</head>
+<body>
+	<!-- Inici Capçalera -->
+	<header>
+		<div class="contenidor">
+			<div class="col1">
+				<div id="logo">
+					<img src="images/logo.png" alt="logo Musicality" width="100" height="100">
+					<span class="tooltip">Utilitzant el mètode animate() animem el logo.</span>
+				</div>	
+			</div>
+			<div class="col2">
+				<div id="titolpagina">
+					<h1>Musicality</h1>
+				</div>	
+				<div id="dropdown">
+					<img class="botomenu" id="botomenu" src="images/menu.png" alt="botomenu">
+					<span class="tooltip">Cliquem per obrir el menú amb Toggle().</span>
+				</div>
+			</div>
+			<div class="col3">
+				<div id="navegacio">
+					<nav>
+						<ul>
+							<li><a href="#mainContent">Principal</a></li>
+							<li><a href="index.html">Inici</a></li>
+							<li><a href="experiencies.html">Experiències</a></li>
+							<li><a href="contacte.html">Contacte</a></li>
+							<li><a class="seleccionat"	href="ofertes.html">Ofertes</a></li>
+							<li><a href="extra.html">Qui som</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Menú per dispositius petits-->
+	<div class="menuFull">
+		<ul>
+			<li><a href="index.html">Inici</a></li>
+			<li><a href="experiencies.html">Experiències</a></li>
+			<li><a href="contacte.html">Contacte</a></li>
+            <li><a class="seleccionat" href="ofertes.html">Ofertes</a></li>
+			<li><a href="extra.html">Qui som</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div class="separador2">
+			<h2>Troba el teu pla ideal</h2>
+		</div>
+		<!-- Contingut i taula -->
+		<div class="contenidor"  id="mainContent">
+		<div class="taulapreus">
+			<table summary="tipus de models de serveis amb el preu i característiques">
+				<caption>Preus dels nostres productes</caption>
+				<thead>
+					<tr>
+						<th>Model</th>
+						<th>Preu</th>
+						<th>Característiques</th>
+					</tr>
+				</thead>
+				<tbody>
+                    <tr>
+                        <td data-label="Model">Equipament musical</td>
+                        <td data-label="Preu">80€-1200€</td>
+                        <td data-label="Característiques">Comptem amb instruments musicals variats com guitarres, pianos, amplificadors, etc.</td>
+                    </tr>
+					<tr>
+                        <td data-label="Model">Programa d'edició estàndar</td>
+                        <td data-label="Preu">35€</td>
+                        <td data-label="Característiques">Edició d'audio i conexió amb perifèrics musicals.
+						</td>
+                    </tr>
+					<tr>
+                        <td data-label="Model">Programa d'edició professional</td>
+                        <td data-label="Preu">68€</td>
+                        <td data-label="Característiques">Edició d'audio, conexió amb perifèrics i ajuda de la IA. 
+						</td>
+                    </tr>
+					<tr>
+                        <td data-label="Model">Esdeveniment musical</td>
+                        <td data-label="Preu">Per concretar el preu contacta amb nosaltres.</td>
+                        <td data-label="Característiques">Esdeveniment musical amb instruments diversos i musics professionals.
+						</td>
+                    </tr>
+                </tbody>
+				
+			</table>
+		</div>
+		</div>
+	
+	<footer>
+		<small>© Musicality. Drets reservats</small>
+		<p>musicality@mailexemple.com</p>
+	</footer>
+
+	<!--Botó per tornar a l'inici-->
+	<a id="toTop">
+		<span class="tooltip">Fent click tornem a la part superior de la pàgina.</span>
+		<img src="images/arrow-up.png" alt="Inici" height="50px"></a>
+</body>
+</html>
